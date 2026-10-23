@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEYRA - Watch & Discover</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #101018;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 20px;
+      background: #191925;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { color: #8b7cff; margin: 0; }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 5px;
+      background: #222231;
+      gap: 8px;
+    }
+    nav a { color: white; text-decoration: none; }
+    main { padding: 18px; }
+    .hero {
+      background: linear-gradient(135deg, #5142a8, #b14d9b);
+      padding: 28px 20px;
+      border-radius: 18px;
+    }
+    .hero h2 { font-size: 30px; }
+    .section { margin-top: 28px; }
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .video {
+      background: #252535;
+      border-radius: 12px;
+      padding: 14px;
+      min-height: 95px;
+    }
+    .video span { font-size: 28px; }
+    .video p { margin-bottom: 0; }
+    footer { text-align: center; padding: 25px; color: #aaa; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VEYRA</h1>
+    <span>▶ Watch</span>
+  </header>
+  <nav>
+    <a href="#shorts">Shorts</a>
+    <a href="#stories">Stories</a>
+    <a href="#videos">Videos</a>
+  </nav>
+  <main>
+    <div class="hero">
+      <h2>Your World. Your Stories.</h2>
+      <p>Watch, explore and discover on VEYRA.</p>
+    </div>
+    <section class="section" id="shorts">
+      <h2>⚡ Shorts</h2>
+      <div class="videos">
+        <div class="video"><span>📱</span><p>Shorts 1</p></div>
+        <div class="video"><span>🎬</span><p>Shorts 2</p></div>
+      </div>
+    </section>
+    <section class="section" id="stories">
+      <h2>✨ Stories</h2>
+      <div class="videos">
+        <div class="video"><span>📖</span><p>Story 1</p></div>
+        <div class="video"><span>🌟</span><p>Story 2</p></div>
+      </div>
+    </section>
+    <section class="section" id="videos">
+      <h2>🎥 Long Videos</h2>
+      <div class="videos">
+        <div class="video"><span>🍿</span><p>Featured Video</p></div>
+        <div class="video"><span>▶️</span><p>Watch More</p></div>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 VEYRA. Made for everyone.</footer>
+</body>
+</html>
